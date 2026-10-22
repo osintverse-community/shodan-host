@@ -3,7 +3,7 @@
 schema: 1
 name: shodan-host
 namespace: osintverse-community
-version: 1.31.0
+version: 1.31.1
 summary: "Shows what Shodan has seen on an IP: open ports, services, banners, vulnerabilities, location"
 readme: README.md
 license: MIT
@@ -27,7 +27,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/shodan-host@sha256:8e9d54b015a22342ea69152230cde4ba9fb0c04040cc5e21638e9b99f5c13436
+  image: ghcr.io/osintverse-community/shodan-host@sha256:c5b17a83fcadb2c643f241619c70744edcdf1c4b9721bcc62ddfc7bf86746854
   platforms: [linux/amd64, linux/arm64]
   command: ["shodan-host", "{ip}"]
   output_format: text
